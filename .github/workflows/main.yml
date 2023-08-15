@@ -1,0 +1,2 @@
+- name: Marp CLI Action
+  uses: KoharaKazuya/marp-cli-action@v3.0.0
