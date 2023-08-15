@@ -37,14 +37,14 @@ jobs:
       - name: Marp Build (index.pdf)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: index.md --allow-local-files -o build/README.pdf
+          args: index.md --allow-local-files -o build/index.pdf
         env:
           MARP_USER: root:root
 
       - name: Marp Build (index.pptx)
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: index.md --allow-local-files -o build/README.pptx
+          args: index.md --allow-local-files -o build/index.pptx
         env:
           MARP_USER: root:root
 
