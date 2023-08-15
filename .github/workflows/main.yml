@@ -1,2 +1,24 @@
 - name: Marp CLI Action
   uses: KoharaKazuya/marp-cli-action@v3.0.0
+  with:
+    # Marp CLI configuraiton file path. If not specified, the configuration file in the repository root directory will be automatically detected.
+    # See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#configuration-file).
+
+    config-file: # optional
+    # Whether to generate HTML.
+
+    generate-html: # optional, default is true
+    # Whether to generate PDF.
+
+    generate-pdf: # optional, default is true
+    # Whether to generate PowerPoint.
+
+    generate-pptx: # optional, default is false
+    # Format of the title slide image. Use the input `png` or `jpeg` to generate an image of the title slide. Omit if you don't want to generate.
+    # See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#title-slide---image).
+
+    generate-image: # optional
+    # Format of the slide deck. Use the input `png` or `jpeg` to generate images of the slide deck. Omit if you don't want to generate.
+    # See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#multiple-images---images).
+
+    generate-images: # optional
