@@ -1,15 +1,10 @@
-name: Marp CLI Action
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: KoharaKazuya/marp-cli-action@v3.0.0
-        with:
-          #config-file: # optional
-          generate-html: true
-          generate-pdf: true
-          generate-pptx: false
-          #generate-image: # optional
-          #generate-images: # optional
+- uses: actions/checkout@v3
+
+- name: Convert Markdown into HTML and PDF
+  uses: KoharaKazuya/marp-cli-action@v2
+
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./
