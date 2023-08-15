@@ -14,7 +14,7 @@ header: UFCG / SPLab
   }
 </style>
 
-![bg right:40% 80%](images/undraw_fixing_bugs_w7gi.svg)
+![bg right:40% 80%](img/undraw_fixing_bugs_w7gi.svg)
 
 # **Catálogo de Test Smells**
 
